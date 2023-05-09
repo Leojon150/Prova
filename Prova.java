@@ -2,40 +2,40 @@ import java.util.Scanner;
 
 public class Prova {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
  
         System.out.print("Digite a placa do veículo: ");
-        String placa = sc.nextLine();
+        String placa = scanner.nextLine();
 
         System.out.print("Digite o valor do litro de combustível: ");
-        double valorLitro = sc.nextDouble();
+        double valorLitro = scanner.nextDouble();
 
       
         System.out.print("Digite a quantidade de quilômetros rodados a 60 km/h: ");
-        double km60 = sc.nextDouble();
+        double km60 = scanner.nextDouble();
 
         System.out.print("Digite a quantidade de quilômetros rodados a 80 km/h: ");
-        double km80 = sc.nextDouble();
+        double km80 = scanner.nextDouble();
 
         System.out.print("Digite a quantidade de quilômetros rodados a 100 km/h: ");
-        double km100 = sc.nextDouble();
+        double km100 = scanner.nextDouble();
 
         System.out.print("Digite a quantidade de quilômetros rodados a 120 km/h: ");
-        double km120 = sc.nextDouble();
+        double km120 = scanner.nextDouble();
 
         System.out.print("Digite a quantidade de quilômetros rodados a 140 km/h: ");
-        double km140 = sc.nextDouble();
+        double km140 = scanner.nextDouble();
 
 
-        double comb60 = km60 / 12.0;
-        double comb80 = km80 / 10.0;
-        double comb100 = km100 / 8.0;
-        double comb120 = km120 / 6.666;
-        double comb140 = km140 / 5.714;
+        double combustivel60 = km60 / 12.0;
+        double combustivel80 = km80 / 10.0;
+        double combustivel100 = km100 / 8.0;
+        double combustivel120 = km120 / 6.666;
+        double combustivel140 = km140 / 5.714;
 
        
-        double totalCombustivel = comb60 + comb80 + comb100 + comb120 + comb140;
+        double totalCombustivel = combustivel60 + combustivel80 + combustivel100 + combustivel120 + combustivel140;
         double custoTotal = totalCombustivel * valorLitro;
 
         
@@ -49,6 +49,6 @@ public class Prova {
         System.out.println("Velocidade média ponderada da viagem: " + String.format("%.2f", velocidadeMedia) + " km/h");
         System.out.println("Quantidade total de combustível: " + String.format("%.2f", totalCombustivel) + " litros");
 
-        sc.close();
+        scanner.close();
     }
 }
